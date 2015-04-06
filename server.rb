@@ -1,5 +1,7 @@
 require "socket"
- 
+
+#update entire server to add new features :)
+
 def get_content_type(path)
     ext = File.extname(path)
     return "text/html"  if ext == ".html" or ext == ".htm"
