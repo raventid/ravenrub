@@ -33,6 +33,8 @@ while (session = webserver.accept)
     next
   end
  
+ 
+ #pretty bad style
   if File.directory?(resource)
     session.print "HTTP/1.1 200/OK\r\nContent-type:text/html\r\n\r\n"
     if resource == ""
