@@ -58,6 +58,7 @@ while (session = webserver.accept)
       end
     end
   else
+    #ops
     contentType = get_content_type(resource)
     session.print "HTTP/1.1 200/OK\r\nServer: Matteo\r\nContent-type: #{contentType}\r\n\r\n"
     File.open(resource, "rb") do |f|
