@@ -13,7 +13,7 @@ def get_content_type(path)
     return "text/xml"   if ext == ".xsl"
     return "text/html"
 end
-#too straightforward
+#write c server
 webserver = TCPServer.new('localhost', 8080)
 base_dir = Dir.new(".")
 while (session = webserver.accept)
