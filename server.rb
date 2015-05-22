@@ -11,7 +11,7 @@ def get_content_type(path)
     return "text/plain" if ext == ".rb"
     return "text/xml"   if ext == ".xml"
     return "text/xml"   if ext == ".xsl"
-    return "text/plain" if ext == ".json"
+    return "application/json" if ext == ".json"
     return "text/html"
 end
 #write c server
