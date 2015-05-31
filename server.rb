@@ -14,8 +14,8 @@ def get_content_type(path)
     return "application/json" if ext == ".json"
     return "text/html"
 end
-#write c server
-webserver = TCPServer.new('localhost', 8080)
+
+webserver = TCPServer.new('localhost', 8088)
 base_dir = Dir.new(".")
 while (session = webserver.accept)
   request = session.gets
