@@ -1,2 +1,2 @@
 # ravenrub
-Straightforward ruby server. (Multitypes)
+Straightforward ruby server.
