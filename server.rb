@@ -50,7 +50,7 @@ while (session = webserver.accept)
       if File.directory?(resource_path)
         dir_sign = "/"
       end
-      #check syntax highlight
+      
       if f == ".."
         upper_dir = base_path.split("/")[0..-2].join("/")
         session.print("<a href="\&quot;/#{upper_dir}\&quot;">#{f}/</a>")
