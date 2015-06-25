@@ -1,6 +1,7 @@
 require "socket"
 
 #thread.current
+#fiber?
 def get_content_type(path)
     ext = File.extname(path)
     return "text/html"  if ext == ".html" or ext == ".htm"
