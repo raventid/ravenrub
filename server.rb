@@ -1,6 +1,7 @@
 require "socket"
 
 #thread.current
+#parent.new_worker
 #fiber?
 def get_content_type(path)
     ext = File.extname(path)
