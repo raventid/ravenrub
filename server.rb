@@ -3,6 +3,7 @@ require "socket"
 #thread.current
 #parent.new_worker
 #fiber?
+#spawn new workers in threads
 def get_content_type(path)
     ext = File.extname(path)
     return "text/html"  if ext == ".html" or ext == ".htm"
