@@ -38,7 +38,7 @@ while (session = webserver.accept)
   end
  
   if File.directory?(resource)
-    session.print "HTTP/1.1 200/OK\r\nContent-type:text/html\r\n\r\n"
+    session.print "HTTP/1.1 200/OK\r\nContent-type:text/html\r\n\r\n" #def headers?
     if resource == ""
       base_dir = Dir.new(".")
     else
