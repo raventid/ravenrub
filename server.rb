@@ -20,7 +20,7 @@ end
 
 webserver = TCPServer.new('localhost', 8088)
 base_dir = Dir.new(".")
-while (session = webserver.accept)
+while session = webserver.accept
   request = session.gets
   puts request
   trimmedrequest = request.gsub(/GET\ \//, '').gsub(/\ HTTP.*/, '').chomp
